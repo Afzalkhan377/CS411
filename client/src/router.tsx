@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import Registration from "./pages/Registration";
 import AI from "./pages/AI";
 import Spotify from "./pages/Spotify";
+import Playlist from "./pages/Playlist";
 const Router = () => {
   return (
     <BrowserRouter>
@@ -11,6 +12,7 @@ const Router = () => {
        <Route path = "/register" element={<Registration />} />
        <Route path = "/ai" element={<AI/>} />
        <Route path = "/spotify-auth" element={<Spotify />} />
+       <Route path = "/playlist" element={<Playlist/>} />
       </Routes>
     </BrowserRouter>
   );
