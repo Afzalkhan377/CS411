@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
-import Clien from "../Client";
-import './styles.css';
+import Client from "../Client";
+
 import {
     MDBBtn,
     MDBContainer,
@@ -38,13 +38,13 @@ const Registration: React.FC = () => {
     }
 
     return (
-        <div 
-            className='bg-image p-5 text-center shadow-1-strong rounded mb-5 text-white'
-            style={{
-                backgroundImage:
-                    "url('https://mdbcdn.b-dcn.net/img/new/slides/003.webp')",
-                height: "100vh"
-            }}
+        <div
+        className='bg-image p-5 text-center shadow-1-strong rounded mb-5 text-white' 
+          style={{
+            backgroundImage:
+              "url('https://mdbcdn.b-cdn.net/img/new/slides/003.webp')",
+            height: "100vh"
+          }}
         >
         <MDBContainer>
             <MDBRow style={{marginTop:'10%'}}>
