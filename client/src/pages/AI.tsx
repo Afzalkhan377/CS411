@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import { User } from '../types';
 import Client from '../Client';
-import './styles.css';
+
 import {
     MDBNavbar, MDBNavbarToggler, MDBNavbarNav, MDBNavbarItem, MDBNavbarLink,
     MDBBtn, MDBIcon, MDBCard, MDBRow, MDBRadio, MDBCardBody, MDBInput, MDBContainer
