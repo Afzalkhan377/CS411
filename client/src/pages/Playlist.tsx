@@ -98,6 +98,16 @@ const Playlist: React.FC = () =>{
     <h3 className="fw-bold mb-4 pb-2 pb-md-0 mb-md-1">HERE IS YOUR PLAYLIST!</h3>
     <br/>
     <h6 className="fw mb-4 pb-2 pb-md-0 mb-md-4">You can add this playlist to your Spotify account by clicking the button below</h6>
+    <MDBRow>
+<div className="d-flex justify-content-between">
+<MDBBtn size='lg' href="/ai" color="danger" style={{float:"none", marginTop: '20px', }}className='w-50 mb-3'>
+    Regenerate
+  </MDBBtn>
+  <MDBBtn onClick={spotifyPlaylist} size='lg'style={{float:"none", marginTop: '20px', marginLeft: '20px'}} className='w-50 mb-3' color="danger">
+    Add to Spotify
+  </MDBBtn>
+</div>
+</MDBRow>
 
 <div style={{ display: 'flex', justifyContent: 'space-between' }}>
   <div className="card-container" style={{ width: '50%' }}>
@@ -119,16 +129,7 @@ const Playlist: React.FC = () =>{
   )}
 </div>
 
-<MDBRow>
-<div className="d-flex justify-content-between">
-<MDBBtn size='lg' href="/ai" color="danger" style={{float:"none", marginTop: '20px', }}className='w-50 mb-3'>
-    Regenerate
-  </MDBBtn>
-  <MDBBtn onClick={spotifyPlaylist} size='lg'style={{float:"none", marginTop: '20px', marginLeft: '20px'}} className='w-50 mb-3' color="danger">
-    Add to Spotify
-  </MDBBtn>
-</div>
-</MDBRow>
+
     <div className="loader-container">
       {loading && <BarLoader color="grey" width={800}/>}
     </div>
